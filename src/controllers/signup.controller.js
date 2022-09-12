@@ -2,7 +2,6 @@ import Joi from 'joi';
 import bcrypt from 'bcrypt';
 import db from '../database/db.js';
 
-
 async function createAccount(req, res){
     const { name, email, password, repeatPassword } = req.body;
     const emailCheck = await db.collection('users').findOne({ email: email });
