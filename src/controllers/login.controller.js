@@ -1,5 +1,5 @@
 import bcrypt from 'bcrypt';
-import db from './db.js';
+import db from '../database/db.js';
 import { v4 as uuid } from 'uuid';
 
 async function loginAccount(req, res){

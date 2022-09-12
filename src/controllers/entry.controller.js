@@ -1,6 +1,6 @@
 import dayjs from 'dayjs';
 import customParseFormat from "dayjs/plugin/customParseFormat.js";
-import db from './db.js';
+import db from '../database/db.js';
 
 async function createEntry(req, res){
     function timeCalculator() {

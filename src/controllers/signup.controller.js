@@ -1,6 +1,6 @@
 import Joi from 'joi';
 import bcrypt from 'bcrypt';
-import db from './db.js';
+import db from '../database/db.js';
 
 
 async function createAccount(req, res){
